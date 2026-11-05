@@ -1,3 +1,11 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F1CC32">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Lemon Gym">
 <title>Lemon Gym</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +34,8 @@
   --shadow:0 1px 2px rgba(0,0,0,.3); color-scheme:dark}
 
 *{box-sizing:border-box}
-body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.45}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.45}
 button,input,select{font:inherit;color:inherit}
 button{cursor:pointer}
 :focus-visible{outline:2px solid var(--rule);outline-offset:2px}
@@ -140,6 +149,9 @@ textarea{width:100%;min-height:110px;padding:10px;border-radius:10px;border:1px 
 .toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(20px + env(safe-area-inset-bottom,0px));background:var(--btn);color:var(--btn-fg);padding:11px 16px;border-radius:10px;font-weight:600;font-size:14px;z-index:40;max-width:calc(100% - 32px);box-shadow:var(--shadow)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
+</head>
+<body>
+
 
 <div class="app">
   <header class="top">
@@ -447,3 +459,6 @@ fakeQR($('#qr-checkin'),2026);
 renderAll();
 })();
 </script>
+
+</body>
+</html>
